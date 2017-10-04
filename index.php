@@ -18,7 +18,7 @@ class main{
 		
 		$year = array("2012", "396", "300","2000", "1100", "1089");
 		echo "The value of \$year: ";
-		otherFunctions::printArray($year);
+		arrayFunctions::printArray($year);
 				
 		htmlTags::lineBreak();
 
@@ -108,11 +108,15 @@ class htmlTags{
 	}
 }
 
-class otherFunctions{
+
+class arrayFunctions{
 	static public function printArray($array){
 		print_r($array);
 	}
+}
 
+
+class otherFunctions{
 	static public function asciiValue($text){
 		echo ord($text);
 	}
