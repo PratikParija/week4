@@ -7,7 +7,7 @@ class main{
 		$date = date('Y-m-d', time());
 		$date = str_replace('-', '/', $date);
 		$display = "The value of \$date: ".$date."<br>";
-		//dateDisplay::replaceStr($date);
+		
 		stringFunctions::printString($display);
 
 		$tar = "2017/05/24";
@@ -35,8 +35,6 @@ class main{
 
 		}
 		
-		//echo '<h3>Finding the positions of substring "/"</h3>';
-
 		echo "The positions of '/' in \$date are: ";
 		$chr = '/';
 		$lastPos = 0;
@@ -58,7 +56,6 @@ class main{
 
 		htmlTags::lineBreak();
 
-		//$stringVar = 'cool';
 		echo "The ASCII value of the first character in \$date: ";
 		otherFunctions::asciiValue($date);
 
