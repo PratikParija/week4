@@ -70,14 +70,31 @@ class main{
 
 		htmlTags::lineBreak();
 
+		//$is_leap_year = false;
 		foreach ($year as $value){
 			//return $value;
 			if ($value%4 == 0){
-				echo $value . ' True ';
+				if ($valuw%100 == 0){
+					if ($value%400 == 0){
+						echo $value . ' True ';
+						//echo $is_leap_year = true;
+					}
+					else{
+						echo $value . ' False ';
+						//echo $is_leap_year = false;
+					}
+				}
+				else {
+					echo $value . ' False ';
+					//echo $is_leap_year = true;
+				}
 			}
-			echo $value . ' False ';
-			/*while ($value == null){
-			}*/
+			else{
+				//echo $is_leap_year = false;
+				echo $value . ' False ';
+				/*while ($value == null){
+				}*/
+			}
 		}
 	}	
 }
